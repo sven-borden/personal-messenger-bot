@@ -4,13 +4,9 @@ from chatterbot.trainers import ListTrainer
 
 # Create ChatBot with specific storage adapter and logic adapter
 bot = ChatBot(
-    'cat',
+    'Norman',
     storage_adapter='chatterbot.storage.SQLStorageAdapter',
-    database_uri='sqlite:///database.sqlite3',
-    logic_adapter=[
-        'chatterbot.logic.BestMatch',
-        'chatterbot.logic.TimeLogicAdapter'
-    ]
+    database_uri='sqlite:///database.sqlite3'
 )
 
 # Train the bot with an entry
